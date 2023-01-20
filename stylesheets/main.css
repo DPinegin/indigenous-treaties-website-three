@@ -1,0 +1,613 @@
+/* 
+  The color families that I have chosen are red and cyan (blue or light-blue). I chose 
+  those color families because they are complementary colors on the color wheel.
+
+  I feel that red represent the client's purpose bacause red catches a user's attention,
+  and is associated with energy and action. In addition, in the Indigenous medicine wheel,
+  red represnts the south (which is where Treaty One is located; the south). In many Indigenous and
+  Native-American cultures children are dressed in red during ceremonies and traditions as an 
+  introduction to their ancestors and a call upon the guardians to guard their children. 
+  In Native American cultures red represents the Earth-element and is 
+  why many tribes paint their bodies and faces with red. Due to this webiste's purpose 
+  to inform about Treaty One and honor the Indigenous and Native-American cultures, I felt 
+  that red was a perfect match for this. 
+
+  The second color that I chose was cyan (or light-blue). Blue represnts stability,
+  harmony, peace and calm, which was the purpose the treaties were made with(so both 
+  Indigenous Peoples and Europeans could live together in harmony). Blue is also tied closely
+  with the sky, and many Indigenous and Native-American cultures use blue as a representation of 
+  Father Sky. In addition, Blue relates to water, representing the famous sentence that was said 
+  during the negotiations for Treaty One, stating that Treaty One would be in place 
+  “...as long as the sun shines, the grass grows and the river flows...”. 
+  It is also important to understand that blue is the color of the Métis flag, and the 
+  land where Treaty One is located is the nation's traditional land.
+  Considering that this website is meant to inform people about Treaty One and respect the traditional
+  cultures that negotiated the treaty, I decided to use the color cyan (light-blue) as a color on 
+  my website to balance the red. 
+
+  I used a serif font because the website's purpose is to inform people, and by using 
+  a serif font the webiste will come across as trustworthy, established and reliable (because
+  people come to this website to be informed about the treaties). 
+
+  Sources:
+  https://www.bergerpaints.com/imaginecolours/colour-culture/colours-and-native-american-culture
+  https://www.aboriginalartuk.com/post/2017/11/21/aboriginal-culture-scared-colours
+
+  https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html
+  https://ecampusontario.pressbooks.pub/movementtowardsreconciliation/chapter/the-medicine-wheel-teachings/
+  https://easternwoodlandmetisnation.ca/the-metis-flag/#:~:text=The%20flag%20symbolizes%20the%20creation,Metis%20people%20will%20exist%20forever.
+
+
+*/
+/* 
+  The following will style all elements on the webpage to have:
+  - A line-height of 140% of the font-size. 
+  - A space between words the size of 0.2 relative to the size of the root element.
+  - A space between letters the size of 0.02 relative to the size of the root element. 
+*/
+* {
+  line-height: 140%;
+  word-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
+}
+/* 
+  The following will style the HTML element (the root element) to have:
+  - a default font-size of 62.5% of the browser's default font-size. 
+*/
+html {
+  font-size: 62.5%;
+}
+
+/* 
+  The following will style the body element to have:
+  - the font size of 1.6 times the root element's font size
+  - To have a background color of #fbfbfe, which is an off-white
+  - To have a margin (space around the element's border, this time the body element's border)
+  of 2.5% on the top, bottom, left and right because this ebsite is developed in a liquid layout
+  which means that it needs to take up 90-95% of the window. This website takes-up 95%.
+*/
+body {
+  font-size: 1.6rem;
+  background-color: #fbfbfe;
+  margin: 2.5%;
+}
+/* 
+  The following will style the element with the id of "title" to have: 
+  - a width of auto (which means the width will be automatically adjusted according to the size of the content).
+  - a margin (space around the element's border) of 2% on the top and bottom and 1.8% on the right and left. 
+  - A padding (space between the inner content and the edges of the content) to be 5% of the size of the container on top, bottom, right and left. 
+  - a linear gradient as the background of the section that will be rotated 40 degrees clockwise, with two colors fading into each-other: one is 
+  #9d0101, which is the primary color, and the other is #240b36, which is a dark purple. Prefixes are 
+  added to make sure that the property will be compatible with different browsers. For example, the -webkit-
+  makes this show up on Microsoft Edge, Google Chrome, Apple Safari and modern versions of Opera. -moz- makes 
+  this show up on Mozilla Firefox, -ms- on Internet Explorer, while -o- makes this show up on old versions of Opera.
+  
+  Insparation from: https://uigradients.com/#Earthly
+*/
+#title {
+  width: auto;
+  margin: 2% 1.8%;
+  padding: 5%;
+  background: -webkit-linear-gradient(40deg, #9d0101, #240b36);
+  background: -moz-linear-gradient(40deg, #9d0101, #240b36);
+  background: -ms-linear-gradient(40deg, #9d0101, #240b36);
+  background: -o-linear-gradient(40deg, #9d0101, #240b36);
+  background: linear-gradient(50deg, #9d0101, #240b36);
+}
+/* 
+  The following will style the <nav> element to have:
+  - a background color of #c4f9f3, which is a tint of cyan. 
+  - a margin 0f 1.8% (a margin is the distance between different elements) of the width of the containing element. 
+*/
+nav {
+  background-color: #c4f9f3;
+  margin: 1.8%;
+}
+
+/* 
+  The following will style the unordered list inside the <nav> element to have:
+  - A margin (space around the element's border) to be 1% of the containing element. The margin will be
+  on top and bottom only, while the margin on the left and right will be 0.
+  - A padding (space between the inner content and the edges of the content) to be 0. 
+  - To have a font-size of 4.5 times the root-elements default font size.
+  - To use the font "Times-New-Roman" before using the font "Times". If neither fonts
+  are available, to use the default serif font on the browser. 
+  - To have a font-weight (the thickness of the font's strokes/lines) of bold (value of 700).
+  - To have a font-color of #323140, which is a very dark-grey with a hint of blue.
+  - To have no bullet-points for each list-item.
+*/
+nav ul {
+  margin: 1% 0;
+  padding: 0;
+  font-size: 4.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #323140;
+  list-style: none;
+}
+/* 
+  The following styles all the list items to have the following:
+  - To diplay each list-item as inline block, meaning they will be displayed beside each-other.
+  - a height of 100% of the parent element (in this case it is the <nav>) for each list-item.
+*/
+nav li {
+  display: inline-block;
+  height: 100%;
+}
+/* 
+  The following will style all the <a> anchors in the <nav> element to have the following:
+  - To display each anchor as inline block, meaning they will be displayed beside each-other.
+  - To have the height to be 100% (the height of the content is 100% of the the parent element. In this
+  case, the parent element is the <nav>).
+  - To have a padding (space between the inner content and the edges of the content) to be 1.5% of the view-width
+  on the top, right, bottom and left.
+  - To have a font color of #323140, which is a dark-grey with a hint of blue.
+  - To not have an underline under the each anchor.
+*/
+nav a {
+  display: inline-block;
+  color: #323140;
+  padding: 1.5vw;
+  height: 100%;
+  text-decoration: none;
+}
+/* 
+  The following styles the <anchor> element in the <nav> element to do the following when a user 
+  hovers or clicks the link:
+  - Have a backrgound color of #323140, which is a dark-grey with a hint of blue.
+  - To have a font color of #e1fbff, which is a tint of cyan. 
+
+  This means that when an anchor is hovered upon, 
+  the backrgound color and the font color will swap-out, except the font-color
+  will be lighter than the background color of the <nav> for better contrast. 
+*/
+nav a:hover,
+nav a:focus {
+  background-color: #323140;
+  color: #e1fbff;
+}
+/* 
+  The following will style the <h1> (main heading) to have the folowing:
+  - To have a font-size of 12 times the root-element's default font size.
+  - To have a font color of #ededed, which is an off-white (the background of the h1 is 
+  a gradient of red and purple. This means that the font color should be lighter than the 
+  background for better readability).
+  - To align the text to the heading to the center of the web-page.
+  - a margin 0f 3.8% (a margin is the distance between different elements) of the width of the containing element.
+*/
+h1 {
+  font-size: 12rem;
+  color: #ededed;
+  text-align: center;
+  margin: 3.8%;
+}
+/* 
+  The following will style the <h2> (second largest heading) to have the following:
+  - To have a font-size of 8 times the root-elements default font size.
+  - To have a font color of #9d0101, which is a darker red than the red of gradient behind the <h1>.
+  - To dipslay each heading as inline block, meaning they will be displayed beside other elements.
+  - To have a width of 40% of the element's content area.
+  - To have a margin (space around the element's border)
+  of 0 on the top and bottom and 2% of the width of the containing element on the right and left.
+*/
+h2 {
+  font-size: 8rem;
+  color: #9d0101;
+
+  display: inline-block;
+  width: 40%;
+
+  margin: 0 2%;
+}
+/* 
+  The following styles the <p> elements in a <figcaption> element to have the following:
+  - To have a font-size of 3.5 times the root-elements default font size.
+  - To have a line-height of 140% of the font-size.
+  - To use the font "Times-New-Roman" before using the font "Times". If neither fonts
+  are available, to use the default serif font on the browser. 
+  - To have a margin (space around the element's border) at the bottom of the element 
+  to be 4% of the width of the containing element. 
+*/
+
+figcaption p {
+  font-size: 3.5rem;
+  line-height: 140%;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 4%;
+}
+/* 
+  The following will style the <h3> element to have the following:
+  - A font-size of 6.5 times the root-elements default font size.
+  - To have a font-weight (the thickness of the font's strokes/lines) of bold (value of 700).
+  - To have a margin (space around the element's border) to be 1% of the webpage's size.
+  - To have a font color of #9d0101, which is a darker red than the red behind the <h1>.
+*/
+h3 {
+  font-size: 6.5rem;
+  font-weight: bold;
+  margin: 1%;
+  color: #9d0101;
+}
+/* 
+  The following will style the <p> element to have the following:
+  - A font-size of 4.5 times the root-elements default font size.
+  - To use the font "Times-New-Roman" before using the font "Times". If neither fonts
+  are available, to use the default serif font on the browser.
+  - To have a font-color of #323140, which is a dark-grey with a hint of blue.
+  - To have a margin (space around the element's border) to be 1.5% of the webpage.
+*/
+p {
+  font-size: 4.5rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #323140;
+  margin: 1.5%;
+}
+/* 
+  The following will style the <section> element to have the following:
+  - A background color of #f0f0f0, which is a light gray.
+  - To be 95% of the width of the web-page.
+  - To have a height of auto, which means that the height will automatically adjust it's height 
+  to the height of the content so it can be displayed correctly.
+  - To have a padding (space between the inner content and the edges of the content) of 1%
+  on the top, bottom, left and right.
+  - To have a margin (space around the element's border) to be 2% on the top, right, bottom and left.
+*/
+section {
+  background-color: #f0f0f0;
+  width: 95%;
+  height: auto;
+  padding: 1%;
+  margin: 2%;
+}
+/* 
+  The following styles all elements that are part of the class called "description-list-style" to have:
+  - A margin (space around the element's border) to be 2% of the webpage.
+  - A font-size of 4.5 times the root-element's default font size.
+*/
+.description-list-style {
+  margin: 2%;
+  font-size: 4.5rem;
+}
+/* 
+  The following styles all the elements that have an id of "quote" to have:
+  - a background color of #fbfbfe, which is an off-white.
+*/
+#quote {
+  background-color: #fbfbfe;
+}
+/* 
+  The following styles all the <h1> elements inside the elements that 
+  have an id of "quote" to have:
+  - a font-size of 7 times the root-elements default font size.
+  - To use the font "Georgia" before using the font "Times". If neither fonts
+  are available, to use the default serif font on the browser.
+  - To have a font-weight (the thickness of the font's strokes/lines) of bolder (defines very thick characters). 
+  - To align the text to the center of the web-page.
+  - To have a font color of #535336e, which is lighter variation of the font color of the <p> elements.
+  - To have a font-style of italic, meaning that the letters will be italicized.  
+*/
+#quote h1 {
+  font-size: 7rem;
+  font-family: Georgia, Times, serif;
+  font-weight: bolder;
+  text-align: center;
+  color: #53536e;
+  font-style: italic;
+}
+/* 
+  The following will style all the <p> elements that are inside the elements that have an id 
+  of "quote" to have the following:
+  - A font-size of 5 times the root-elements default font size.
+  - To use the font "Georgia" before using the font "Times". If neither fonts
+  are available, to use the default serif font on the browser.
+  - To have a font-weight (the thickness of the font's strokes/lines) of bolder (defines very thick characters). 
+  - To align the text to the center of the web-page.
+  - To have a font color of #535336e, which is lighter variation of the font color of the <p> elements.
+  - To have a font-style of italic, meaning that the letters will be italicized.
+*/
+#quote p {
+  font-size: 5rem;
+  font-family: Georgia, Times, serif;
+  font-weight: bolder;
+  text-align: center;
+  color: #53536e;
+  font-style: italic;
+}
+/* 
+  The following styles all elements that are part of the class called "source-link" to have:
+  - To have no bullet-points for each list-item. 
+  - A font-size of 4 times the root-elements default font size.
+*/
+.source-link {
+  list-style: none;
+  font-size: 4rem;
+}
+
+/* 
+  The following will style the element that has an id of "treaty-partners-animation" to have:
+  - A position of relative, meaning that the element will be positioned relative to its default (static)
+  position, unless you start changing the CSS properties for top, right, bottom, and left (Scott Hardman).
+  - To have a display behavior of flex (displays elements as flex containers, which helps with 
+  designing responsive webpages) (W3 Schools). Prefixes such as -webkit-, -o-, -moz- and -ms- are added to make 
+  this compatible with different browsers.
+  - Align the items inside the flex container even when the items do not all use available space on 
+  the main axis (W3 Schools). 
+  - To align the items iside the flex-box to center (W3 Schools). This is used with the prefixes of 
+  -webkit-, -moz, and -ms to make it compatible on other browsers. 
+  - Have a background color of #fbfbfe, which is an off white and is also the color of the background of the website
+  - To have a font-color of #323140, which is a dark-grey with a hint of blue.
+
+  Credit: comments from Scott Hardman, 2023, https://www.w3schools.com/cssref/pr_class_display.php, https://www.w3schools.com/cssref/css3_pr_justify-content.php, and https://www.w3schools.com/cssref/css3_pr_align-items.php
+  Source of the new animation:  animation sources: https://blog.hubspot.com/website/css-animation-examples   and   https://alvarotrigo.com/blog/7-scroll-text-animations-css-and-js/
+*/
+
+#treaty-partners-animation {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -o-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -o-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -o-flex-align: center;
+  align-items: center;
+  background-color: #fbfbfe;
+  color: #323140;
+}
+/* 
+  The following will style the h1 elements inside the element that has an id of "treaty-partners-animation" to have:
+  - To have a font-color of #323140, which is a dark-grey with a hint of blue.
+  - A line-height of 1.4 units relative to the font-size of the parent element. 
+  - To dipslay as inline block, meaning it will be displayed beside other elements.
+*/
+#treaty-partners-animation h1 {
+  color: #323140;
+  line-height: 1.4em;
+  display: inline-block;
+}
+
+/* 
+  The following styles the element that has an id of "scroller" to have the following:
+  -  To dipslay each heading as inline block, meaning they will be displayed beside other elements.
+  - To have a height of 16 times the root elemnt's default size.
+  - To have a line-height of 0.
+  - To have the overflow (when the content is too big to fit inside the content area) to be hidden, 
+  meaning that the overflow is clipped while the rest of the content is hidden. 
+  - To have a width of 52 units relative to the font-size of the parent element.
+  - A position of relative, meaning that the element will be positioned relative to its default (static)
+  position, unless you start changing the CSS properties for top, right, bottom, and left (Scott Hardman).
+  Comment Credit: Scott Hardman, 2023.
+*/
+#scroller {
+  display: inline-block;
+  height: 16rem;
+  line-height: 0;
+  overflow: hidden;
+  width: 52em;
+  position: relative;
+}
+
+/* 
+  The following will style the span element inside the element with the id of "scroller" to have the following (Scott Hardman):
+  - A position of absolute, meaning that the element will be positioned relative
+  to its closest postioned ancestor (the ancestor's position is anything but "static")(Scott Hardman). 
+  - To have a font-size of 12 times the root-elements default font size.
+  - To have a line-height of 1.4 relative to the font-size of the parent-element
+  - To align the text to the center of the parent element.
+  - Animation:
+    - Defined the animation name as "sliding-words" (the name of the animation) (Scott Hardman). 
+    - Defined the animation duration as 5 seconds (for how long the animation will run for) (Scott Hardman).
+    - Defined the animation delay as 1 second (how long will the animation delay for) (Scott Hardman). 
+    - Defined the animation fill-mode (whether the animation will keep it sstyling at the end)
+      as forwards, which means that the animation will keep its styling at the end (Scott Hardman). 
+  - To have a font-weight (the thickness of the font's strokes/lines) of bold (value of 700).
+
+  Comment credit : Scott Hardman, 2023
+*/
+#scroller > span {
+  position: absolute;
+  font-size: 12rem;
+  line-height: 1.4em;
+  text-align: center;
+  -webkit-animation: sliding-words 5s 1 forwards;
+  -moz-animation: sliding-words 5s 1 forwards;
+  -o-animation: sliding-words 5s 1 forwards;
+  animation: sliding-words 5s 1 forwards;
+  font-weight: bold;
+}
+/* 
+  The following will style the @keyframes (set of animation styles, where each style has an offset value)
+  of the animation called "sliding-words" 
+  with the prefix webkit (to make it compatible with Apple Safari, Microsoft Edge, Google Chrome and 
+  modern version of Opera) to have the following: 
+  - At the starting point, 0%, for the top to be at 0;
+  - At 25% through the animation for the top to be at -1.4 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 50% through the animation for the top to be at -2.8 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 75% through the animation for the top to be at -4.2 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 100% (the end of the animation) for the top to be at -4.2 units relative to the font-size of the parent element
+  (to the viewer it will look like the stayed where it is. So in the end, the animation will look like the element
+  slowly moved up once, twice, three times and then stayed in its final position. Due to the fact that this elemnt
+  also has a list of words on them the user will see word1, then it will move up and word2 will appear, then 
+  the word will move up once again and word3 will appear, then word3 will move up again and word4 will appear and 
+  stay).
+
+  Credit: Defintion for @keyframes sourced from https://angular.io/api/animations/keyframes. 
+*/
+@-webkit-keyframes sliding-words {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.4em;
+  }
+  50% {
+    top: -2.8em;
+  }
+  75% {
+    top: -4.2em;
+  }
+  100% {
+    top: -4.2em;
+  }
+}
+/* 
+  The following will style the @keyframes (set of animation styles, where each style has an offset value)
+  of the animation called "sliding-words" 
+  with the prefix ms (to make it compatible with Internet Explorer) to have the following: 
+  - At the starting point, 0%, for the top to be at 0;
+  - At 25% through the animation for the top to be at -1.4 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 50% through the animation for the top to be at -2.8 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 75% through the animation for the top to be at -4.2 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 100% (the end of the animation) for the top to be at -4.2 units relative to the font-size of the parent element
+  (to the viewer it will look like the stayed where it is. So in the end, the animation will look like the element
+  slowly moved up once, twice, three times and then stayed in its final position. Due to the fact that this elemnt
+  also has a list of words on them the user will see word1, then it will move up and word2 will appear, then 
+  the word will move up once again and word3 will appear, then word3 will move up again and word4 will appear and 
+  stay).
+
+  Credit: Defintion for @keyframes sourced from https://angular.io/api/animations/keyframes. 
+*/
+@-ms-keyframes sliding-words {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.4em;
+  }
+  50% {
+    top: -2.8em;
+  }
+  75% {
+    top: -4.2em;
+  }
+  100% {
+    top: -4.2em;
+  }
+}
+/* 
+  The following will style the @keyframes (set of animation styles, where each style has an offset value)
+  of the animation called "sliding-words" 
+  with the prefix moz (to make it compatible with Mozilla Firefox) to have the following: 
+  - At the starting point, 0%, for the top to be at 0;
+  - At 25% through the animation for the top to be at -1.4 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 50% through the animation for the top to be at -2.8 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 75% through the animation for the top to be at -4.2 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 100% (the end of the animation) for the top to be at -4.2 units relative to the font-size of the parent element
+  (to the viewer it will look like the stayed where it is. So in the end, the animation will look like the element
+  slowly moved up once, twice, three times and then stayed in its final position. Due to the fact that this elemnt
+  also has a list of words on them the user will see word1, then it will move up and word2 will appear, then 
+  the word will move up once again and word3 will appear, then word3 will move up again and word4 will appear and 
+  stay).
+
+  Credit: Defintion for @keyframes sourced from https://angular.io/api/animations/keyframes. 
+*/
+
+@-moz-keyframes sliding-words {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.4em;
+  }
+  50% {
+    top: -2.8em;
+  }
+  75% {
+    top: -4.2em;
+  }
+  100% {
+    top: -4.2em;
+  }
+}
+/* 
+  The following will style the @keyframes (set of animation styles, where each style has an offset value)
+  of the animation called "sliding-words" 
+  with the prefix o (to make it compatible with older versions of Opera) to have the following: 
+  - At the starting point, 0%, for the top to be at 0;
+  - At 25% through the animation for the top to be at -1.4 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 50% through the animation for the top to be at -2.8 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 75% through the animation for the top to be at -4.2 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 100% (the end of the animation) for the top to be at -4.2 units relative to the font-size of the parent element
+  (to the viewer it will look like the stayed where it is. So in the end, the animation will look like the element
+  slowly moved up once, twice, three times and then stayed in its final position. Due to the fact that this elemnt
+  also has a list of words on them the user will see word1, then it will move up and word2 will appear, then 
+  the word will move up once again and word3 will appear, then word3 will move up again and word4 will appear and 
+  stay).
+
+  Credit: Defintion for @keyframes sourced from https://angular.io/api/animations/keyframes. 
+*/
+@-o-keyframes sliding-words {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.4em;
+  }
+  50% {
+    top: -2.8em;
+  }
+  75% {
+    top: -4.2em;
+  }
+  100% {
+    top: -4.2em;
+  }
+}
+/* 
+  The following will style the @keyframes (set of animation styles, where each style has an offset value)
+  of the animation called "sliding-words" to have the following: 
+  - At the starting point, 0%, for the top to be at 0;
+  - At 25% through the animation for the top to be at -1.4 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 50% through the animation for the top to be at -2.8 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 75% through the animation for the top to be at -4.2 units relative to the font-size of the parent element
+  (to the viewer it will look like the element moved up).
+  - At 100% (the end of the animation) for the top to be at -4.2 units relative to the font-size of the parent element
+  (to the viewer it will look like the stayed where it is. So in the end, the animation will look like the element
+  slowly moved up once, twice, three times and then stayed in its final position. Due to the fact that this elemnt
+  also has a list of words on them the user will see word1, then it will move up and word2 will appear, then 
+  the word will move up once again and word3 will appear, then word3 will move up again and word4 will appear and 
+  stay).
+
+  Credit: Defintion for @keyframes sourced from https://angular.io/api/animations/keyframes. 
+*/
+@keyframes sliding-words {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.4em;
+  }
+  50% {
+    top: -2.8em;
+  }
+  75% {
+    top: -4.2em;
+  }
+  100% {
+    top: -4.2em;
+  }
+}

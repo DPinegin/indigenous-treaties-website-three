@@ -1,0 +1,364 @@
+<!--
+  Name: Daria Pinegin
+  Course: Software Development 20S
+  Teacher: Scott Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: January 19th, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Terms of Treaty One</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <style>
+      /* 
+        The following styles the element with the id "video" to have:
+        - To have a display behavior of flex (displays elements as flex containers, which helps with 
+        designing responsive webpages) (W3 Schools). Prefixes such as -webkit-, -moz- and -ms- are added to make 
+        this compatible with different browsers.
+        - To display the flexible items vertically, in other words, in a column. 
+        - To align the items iside the flex-box to center (W3 Schools). This is used with the prefixes of 
+        -webkit-, -moz, and -ms to make it compatible on other browsers.
+        - a background color of #fbfbfe, which is the backgground color of the webpage
+        - to have a border style of groove in the color of (239,239,239) which is an off-white
+        - To have padding (space between the inner content and the edges of the content) to be 0.5% of the container. 
+      */
+      #video {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -o-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -moz-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        -o-flex-align: center;
+        align-items: center;
+        background-color: #fbfbfe;
+        border: groove rgb(239, 239, 239);
+        padding: 0.5%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--
+        The header of the webpage. Contains the main heading written using <h1>, and the navigation
+        menu written using unordered lists.
+      -->
+      <h1 id="title">The Numbered Treaties of Canada</h1>
+      <!--
+        The navigation menu contained in the <nav> sematic tag.
+
+        The <li> of the unordered list are styled using a class "nav-link" that is in the external
+        stylesheet, because the navigation menu is something that will be seen on all webpages 
+        and should stay in consistent style throught any webpage. 
+      -->
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home Page</a></li>
+          <li>
+            <a href="terms-of-treaty-one.html" class="nav-link">
+              Terms and Promises
+            </a>
+          </li>
+          <li>
+            <a href="current-day-treaty-one.html" class="nav-link">
+              Treaty One Today
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--
+      The <main> sematic tag used to contain all the main content of the website.
+    -->
+    <main>
+      <br />
+      <!--
+        An image to attract the user's attention with a acorresponding figcaption. 
+        Image has alt text to describe what the image is about to improve accessibility. 
+        The image takes up the entire width of the parent element and has a height of 10% of the parent element. 
+        The figcaption is styled in the external stylesheet to make sure that the figcaption stays consistent
+        throughout all webpages. 
+      -->
+      <figure>
+        <img
+          src="images/first-nations-treaty-promises-protest.jpg"
+          width="100%"
+          height="10%"
+          alt="A photo of members from First Nation communities standing in teh snow and holding 
+            posters. There is a woman at the front with a confused/disgusted face, with a large
+            poster behind her that reads 'Remember Canada: You are a Treaty partner'. The people around her,
+            although blurry, have determined looks in their eyes as the protest marches forward towards
+            the photographer. Photographer: Julie Oliver. Photo Credit: occupybellinghamwa.org." />
+        <figcaption>
+          <p>
+            <b>Fig.1</b> Members of First Nations that signed treaties voicing
+            their concern over promises promised during treaty negotiations that
+            were not met by the Canadian government. Photographer: Julie Oliver.
+            Photo credit: occupybellinghamwa.org.
+          </p>
+        </figcaption>
+      </figure>
+
+      <!--
+        The name of the Treaty written using <h2> tags. 
+      -->
+      <h2>Treaty One</h2>
+
+      <!--
+        Each information paragraph is contained inside a <section>. 
+        The <section> is styled in the external stylesheet to make it consistent 
+        in every webpage that it is used in.
+        
+        Each section of information contains a title written using <h3> tags and
+        the "body" of the information written using <p> tags.
+
+        One section contains an ordered list that lists different promises.
+        The list items in the ordered list are styled using a class called
+        "description-list-style", and are styled in the external stylesheet to make them 
+        consistent across all webpages.. 
+      -->
+
+      <section>
+        <h3>Unfulfilled Promises</h3>
+        <p>
+          After the signing of Treaty One, many outside promises on the side of
+          the Canadian government were not fulfilled. No provisions were
+          included for agricultural implements, clothing and animals that were
+          promised. Many Indigenous People voiced their concerns about the
+          unfulfilled promises in February 1872, yet the issues were not
+          resolved by the federal government until April 30th, 1975.
+        </p>
+      </section>
+      <section>
+        <h3>Broken Promises: Hunting and Fishing Rights</h3>
+        <p>
+          The negotiators from the side of the Canadian government failed to
+          include a provision on hunting and fishing rights in the written text
+          of Treaty One, although they verbally promised to Indigenous Peoples
+          that they would retain such rights in the ceded territory. As the
+          years went on, the settler government of Manitoba began restricting
+          access to Indigenous Peoples to game and fishing, which violated these
+          promises.
+        </p>
+      </section>
+
+      <br />
+
+      <!-- 
+        The following is a quote that is sourced from: 
+        https://c7r.1b6.myftpupload.com/wp-content/uploads/2021/11/Kapyong-Barracks-Master-Plan.pdf (it is also
+        sourced at the bottom of the wbepage, in "sources").
+        The <section> that contains the quote had an id of "quote". There is only one element on a webpage
+        that needs the styling, so that is why an id is used isntead of a class (a class is used when 
+        you want to style multiple elements on a webpage).
+      -->
+      <section id="quote">
+        <h1>
+          "...Canada is a test case for a grand notion: the notion that
+          dissimilar peoples can share lands, resources, power, and dreams
+          while respecting and sustaining their differences. The story of
+          Canada is the story of many such peoples, trying and failing and
+          trying again, to live together in peace and harmony. But there
+          cannot be peace or harmony unless there is justice..."
+        </h1>
+        <br />
+        <p>
+          - Chief Georges Erasmus and Justice René Dussault, The Royal
+          Commission on Aboriginal Peoples
+        </p>
+      </section>
+
+      <br />
+
+      <section>
+        <h3>Implementation of Treaty One Today</h3>
+        <p>
+          Treaty One established clearly defined land ownership and
+          jurisdiction, and foster a new relationship based on mutual respect,
+          trust and understanding. In addition, it provides guidelines on how
+          Europeans can use the traditional land that Indigenous Peoples have
+          occupied. They also provide documents with Indigenous rights as
+          written in the treaties. Although there are many instances of conflict
+          due to the unfulfilled promises historically, today Treaty One is
+          still implemented in many ways. One of those ways is by building
+          reserves, most notably the plans for a Naawi-Oodena urban reserve,
+          also known as Former Kapyong Barracks Master Plan.
+        </p>
+      </section>
+
+      <section>
+        <h3>The Naawi-Oodena Master Plan</h3>
+        <p>
+          The Naawi-Oodena Master Plan oversees the development of former
+          Kapyong Barracks into an urban reserve for Treaty One First Nations,
+          Winnipeg, Manitoba and Canada for future generations. The development
+          of the lands will help shape Winnipeg’s future urban growth, generate
+          significant economic investment and connect communities. The
+          comprehensive planning and framework of the Master Plan wants to
+          transform the 160-acres site into a diverse mixed-use community,
+          emphasizing Indigenous culture, design-excellence and connectivity
+          with the surrounding neighborhoods.
+        </p>
+      </section>
+      <figure>
+        <img
+          src="images/naawi-oodena-sketch-of-the-plan.jpg"
+          width="100%"
+          height="10%"
+          alt="A large image of a sketch made with black ink and watercolors, depicting a large
+            rectangular area of land in a bird's-eye perspective. There are roughly sketched buildings
+            in the rectangular area of land. There are multiple roads that have intersections in two 
+            sites. The roads lead towards and away from the center of the rectangle. There is lots 
+            'of greenery in the rectangular, mostly tress, bushes, and grass. In teh right corner 
+            of the drawig there is a small pond. Photo Credit: Canada Lands Company." />
+        <figcaption>
+          <p>
+            <b>Fig.2</b> A colorful sketch depicting the plans for the urban
+            reserve Naawi-Oodena. Photo Credit: Canada Lands Company.
+          </p>
+        </figcaption>
+      </figure>
+
+      <br />
+
+      <figure>
+        <img
+          src="images/naawi-oodena-master-plan-overhead-shot.png"
+          width="100%"
+          height="10%"
+          alt="This is a graphic 3d model depicting the drawing from above. There is a large 
+            circular pond in the center of the image which is divided into two sections that 
+            resemble a ying-yang. Around the pond, there are large buildings each being a couple
+            of stories high. The buildings are standing in a circe around teh pond, withh 
+            some standing around the first circle of buildings. Most of the image is taken by 
+            greenery, like bushes, trees and grass which is planted around the buildings. 
+            Photo Credit: treatyone.ca." />
+        <figcaption>
+          <p>
+            <b>Fig.3</b> A computer-made image of the urban reserve,
+            Naawi-Oodena, based on the plan. This is how part of the reserve
+            will look like once Naawi-Oodena will be finished building. Photo
+            Credit: treatyone.ca.
+          </p>
+        </figcaption>
+      </figure>
+      <br />
+
+      <section>
+        <h3>Aspirations for the Master Plan</h3>
+        <p>
+          There are seven main aspirations for the Master Plan. Those include:
+        </p>
+        <ol>
+          <li class="description-list-style">
+            To generate success and cultivate new partnerships
+          </li>
+          <li class="description-list-style">
+            Make a welcoming and inclusive community
+          </li>
+          <li class="description-list-style">
+            Celebrate the identity and culture of First Nations
+          </li>
+          <li class="description-list-style">
+            Promote sustainable urban development
+          </li>
+          <li class="description-list-style">
+            Progress new expression in Indigenous design
+          </li>
+          <li class="description-list-style">
+            Share Indigenous knowledge and teachings
+          </li>
+          <li class="description-list-style">
+            Display innovation in design and urban development
+          </li>
+        </ol>
+      </section>
+
+      <p>
+        <a 
+          href="https://www.youtube.com/watch?v=WGqN5MTamP8" target="blank">
+            Click here to view the Treaty One Journey to Naawi-Oodena video on Youtube
+        </a>
+        or watch the video below:
+      </p>
+      <section id="video">
+        <iframe
+          width="2133"
+          height="1200"
+          src="https://www.youtube.com/embed/WGqN5MTamP8"
+          title="Journey to Naawi-Oodena YouTube Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </section>
+    </main>
+
+    <!--
+      The footer of the website containing source information and copyright information.
+      The source information is contained in a <section> tag. 
+      The source information is styled using a "source-link" class that is styled
+      in the external stylesheet. 
+    -->
+    <footer>
+      <section>
+        <h3>Sources:</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2"
+              target="blank"
+              class="source-link">
+                Click here to go to the Canadian Encyclopedia Treaties One and Two
+                Webpage
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.clc-sic.ca/real-estate/naawi-oodena"
+              target="blank"
+              class="source-link">
+                Click here to go to Canada Lands Company Naawi-Oodena Master Plan
+                Webpage
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://treaty1.ca/naawi-oodena/"
+              target="blank"
+              class="source-link">
+                Click here to go to Treaty One Naawi-Oodena Master Plan Webpage
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://c7r.1b6.myftpupload.com/wp-content/uploads/2021/11/Kapyong-Barracks-Master-Plan.pdf"
+              target="blank"
+              class="source-link">
+                Click here to go to Treaty One Former Kapyong-Barracks-Master-Plan
+                Online PDF
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <br />
+
+      <p>&#169; 2022-2023 Daria P</p>
+    </footer>
+  </body>
+</html>

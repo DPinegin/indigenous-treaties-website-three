@@ -1,0 +1,383 @@
+<!--
+  Name: Daria Pinegin
+  Course: Software Development 20S
+  Teacher: Scott Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: January 19th, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Terms of Treaty One</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <style>
+      /*
+        This is a researched transition that was sourced from https://www.joshwcomeau.com/animation/css-transitions/.
+        The following styles the element with the id "travel-manitoba-link" to have:
+        - a linear gradient as the background of the section that will be rotated 160 degrees clockwise, with two colors fading into each-other: one is 
+        #c4f9f3, which is the secondary color, and the other is #e1fbff, which is a lighter version of the secondary color. Prefixes are 
+        added to make sure that the property will be compatible with different browsers. For example, the -webkit-
+        makes this show up on Microsoft Edge, Google Chrome, Apple Safari and modern versions of Opera. -moz- makes 
+        this show up on Mozilla Firefox, while -o- makes this show up on old versions of Opera. 
+        - To have no border around the content.
+        - To have padding (space between the inner content and the edges of the content) to be 2% of the container.
+        - To have a font color of #323140, which is a dark gray with a hint of blue
+        - The font size of 5.5 times the root element's font size
+        - To align the text to the center of the container.
+        - To diplay the element as inline block, meaning it can be displayed beside other elements.
+        - To not have any text-decorations (liek underlines).
+        - A transition that will move the the element (transform), and that will last for 250 miliseconds. 
+        Compatability prefixes are added to make sure that the property will be compatible with different 
+        browsers. For example, the -webkit- makes this show up on Microsoft Edge, Google Chrome, Apple Safari and 
+        modern versions of Opera. -moz- makes this show up on Mozilla Firefox, while -o- makes this show up 
+        on old versions of Opera. 
+        - A position of relative, meaning that the element will be positioned relative to its default (static)
+        position, unless you start changing the CSS properties for top, right, bottom, and left (Scott Hardman).
+        - To have a font-weight (the thickness of the font's strokes/lines) of bolder (defines very thick characters). 
+      */
+      #travel-manitoba-link {
+        background: -webkit-linear-gradient(160deg, #c4f9f3, #e1fbff);
+        background: -moz-linear-gradient(160deg, #c4f9f3, #e1fbff);
+        background: -ms-linear-gradient(160deg, #c4f9f3, #e1fbff);
+        background: -o-linear-gradient(160deg, #c4f9f3, #e1fbff);
+        background: linear-gradient(160deg, #c4f9f3, #e1fbff);
+        border: none;
+        padding: 2%;
+        color: #323140;
+        font-size: 5.5rem;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        -webkit-transition: transform 250ms;
+        -o-transition: transform 250ms;
+        -ms-transition: transform 250ms;
+        -moz-transition: transform 250ms;
+        transition: transform 250ms;
+        position: relative;
+        font-weight: bolder;
+      }
+
+      /* 
+        The following will style the element with the id of "travel-manitoba-link" once the user hovers on it to have:
+        - translated (moved) on the y-axis by 20% (of the container) downwards. Prefixes are added to make sure 
+        that the property will be compatible with different browsers. For example, the -webkit- makes this show 
+        up on Microsoft Edge, Google Chrome, Apple Safari and modern versions of Opera. -moz- makes 
+        this show up on Mozilla Firefox, while -o- makes this show up on old versions of Opera. 
+      */
+      #travel-manitoba-link:hover {
+        -webkit-transform: translateY(-20%);
+        -ms-transform: translateY(-20%);
+        -moz-transform: translateY(-20%);
+        -o-transform: translateY(-20%);
+        transform: translateY(-20%);
+      }
+      /* 
+        The following will style the element with the id of "manitoba-treaties" to have:
+        - a width of 95% of the webpage
+        - a background image that will not repeat (there will only be one) and that will be resized 
+        to cover the entire container.
+        - a margin (distance between different elements) of 3% on the top and bottom and 2% on the right and left 
+        of the width of the containing element.
+      */
+      #manitoba-treaties {
+        width: 95%;
+        background-image: url("images/bannock-travel-manitoba-cover-image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 3% 2%;
+      }
+      /* 
+        The following styles all the <p> elements inside the element that has the id of "manitoba-treaties" to have:
+        - a font color of 237, 237, 237,which is an off-white
+        - a margin (distance between different elements) of 1% on the top, 0.5% on the bottom, 2% on the right 
+        and 3% on the left of the width of the containing element.
+      */
+      #manitoba-treaties p {
+        color: rgb(237, 237, 237);
+        margin: 1% 0.5% 2% 3%;
+      }
+      /* 
+        The following styles all the <h1> elements in teh id named "manitoba-treaties" to have:
+        - To diplay elements as inline block, meaning they will be displayed beside each-other.
+        - To have a margin (distance between different elements) of 1% on the top, 0.5% on 
+        the bottom, 0.01% on the right and 3% on the left of the width of the containing element.
+        - The font size of 20 times the root element's font size
+        - To have a font-weight (the thickness of the font's strokes/lines) of bolder 
+        (defines very thick characters).
+        - To have a font-color of 237, 237, 237,which is an off-white
+      */
+      #manitoba-treaties h1 {
+        display: inline-block;
+        margin: 1% 0.5% 0.01% 3%;
+        font-size: 20rem;
+        font-weight: bolder;
+        color: rgb(237, 237, 237);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--
+        The header of the webpage. Contains the main heading written using <h1>, and the navigation
+        menu written using unordered lists.
+      -->
+
+      <h1 id="title">The Numbered Treaties of Canada</h1>
+      <!--
+        The navigation menu contained in the <nav> sematic tag.
+
+        The <li> of the unordered list are styled using a class "nav-link" that is in the external
+        stylesheet, because the navigation menu is something that will be seen on all webpages 
+        and should stay in consistent style throught any webpage. 
+        
+        The "placeholders" are used for future webpages that are not created yet. 
+      -->
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home Page</a></li>
+          <li>
+            <a href="terms-of-treaty-one.html" class="nav-link">
+              Terms and Promises
+            </a>
+          </li>
+          <li>
+            <a href="current-day-treaty-one.html" class="nav-link">
+              Treaty One Today
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--
+      The <main> sematic tag used to contain all the main content of the website.
+    -->
+    <main>
+      <!--
+        The name of the Treaty written using <h2> tags. 
+      -->
+      <h2>Treaty One</h2>
+
+      <br />
+
+      <!--
+        Each information paragraph is contained inside a <section>. 
+        The <section> is styled in the external stylesheet to make it consistent 
+        in every webpage that it is used in.
+        
+        Each section of information contains a title written using <h3> tags and
+        the "body" of the information written using <section> tags.
+
+        Most sections also contain an unordered list that lists different promises.
+        The list items in the unordered list are styled using a class called
+        "description-list-style", and is styled in the external stylesheet. 
+      -->
+
+      <section id="treaty-partners-animation">
+        <h1>We are</h1>
+
+        <div id="scroller">
+          <span>
+            Peguis<br />Sagkeeng<br />Brokenhead<br />Treaty Partners
+          </span>
+        </div>
+      </section>
+
+      <section>
+        <h3>Promises Made from the Canadian Side</h3>
+        <p>
+          Many promises were made during the Treaty signing process from the
+          Canadian side. These include:
+        </p>
+        <ul>
+          <li class="description-list-style">
+            Each band was to receive a reserve large enough to provide 160 acres
+            for each family of five.
+          </li>
+          <li class="description-list-style">
+            Each man, woman and child were to be given a gratuity (one time
+            payment) of three dollars.
+          </li>
+          <li class="description-list-style">
+            Each family were to be given a yearly annuity of $15 per a family of
+            five
+          </li>
+          <li class="description-list-style">
+            Government agreed to maintain a school on each reserve and to
+            prohibit the introduction of selling liquor on each reserve
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Obligations of the Crown</h3>
+        <p>
+          "...will furnish one hundred and sixty acres [64.75 hectares] for each
+          family of five, or in that proportion for larger or smaller families”
+          and an additional area of 25 square miles [64.75 km] reserved for the
+          Portage Band (now Long Plain, Swan Lake and Sandy Bay bands)..."
+        </p>
+        <p>
+          “... Her Majesty agrees to maintain a school on each reserve hereby
+          made whenever the Indians of the reserve should desire it...”
+        </p>
+        <p>
+          “...Within the boundary of Indian reserves ... no intoxicating liquor
+          shall be allowed to be introduced or sold...”
+        </p>
+        <p>
+          “... In every year ensuring the date hereof ... pay to each Indian
+          family of five persons the sum of fifteen dollars Canadian currency,
+          or in like proportion for a larger or smaller family, such payment to
+          be made in such articles as the Indians shall require of blankets,
+          clothing, prints (assorted colours), twine or traps, at the current
+          cost price in Montreal, or otherwise, if Her Majesty shall deem the
+          same desirable in the interests of Her Indian people, in cash...”
+        </p>
+        <p>
+          “...If, at the date of the execution of this treaty, there are any
+          settlers within the bounds of any lands reserved by any band, Her
+          Majesty reserves the right to deal with such settlers as She shall
+          deem just, so as not to diminish the extent of land allotted to the
+          Indians...”
+        </p>
+      </section>
+
+      <section id="manitoba-treaties">
+        <h1>Treaties in Manitoba</h1>
+        <p>
+          There are many historial landmarks in Manitoba regarding the Treaties
+          and the Treaty-making process.
+        </p>
+        <p>
+          Many sites are still up for people to visit and learn about the
+          importance of the Treaties. Click the following link to learn more.
+        </p>
+        <br />
+        <br />
+        <a
+          href="https://www.travelmanitoba.com/places/treaty-areas/"
+          target="blank"
+          id="travel-manitoba-link">
+            Click here to go to Travel-Manitoba Treaties in Manitoba Website
+        </a>
+      </section>
+      <section>
+        <h3>Promises Made From the Side of the First Nations</h3>
+        <p>
+          First Nations, as written in the text, were to “cede, release,
+          surrender and yield to her Majesty Queen” an area of land as was
+          described in the treaty. The land described is current-day southeast
+          and south-central Manitoba, including the Red River Valley, and
+          stretching north to the lower parts of Lake Manitoba and Lake Winnipeg
+          and west along the Assiniboine River to the towns of Portage la
+          Prairie and Brandon.
+        </p>
+      </section>
+      <section>
+        <h3>Obligations of the First Nations</h3>
+        <p>
+          “... to observe this treaty and to maintain perpetual peace between
+          themselves and Her Majesty’s white subjects, and not to interfere with
+          the property or in any way molest the persons of Her Majesty’s white
+          or other subjects...”
+        </p>
+      </section>
+
+      <!--
+        An image to support the information written above.
+
+        The image is contained in the <figure> sematic tag with a <figcaption> inside it.
+        The image has alt text to describe what the image is about to improve accessibility. 
+      -->
+      <figure>
+        <img
+          src="images/treaty-signing-celebration.webp"
+          width="100%"
+          height="6%"
+          alt="A photo of two pairs of hands. One of the hands is holding a pen and is signing
+            a large white, while the other hnads hold the banner flat on the table. The table is 
+            adorned with a bright red tablecloth that has bright pink flowers on it. The table has 
+            lots of colorful strings, banners, flags, blankets and cloths on it. All the materials on the 
+            table are red, blue, yellow, black, green and white.
+            Photo Credit: CBC." />
+        <figcaption>
+          <p>
+            <b>Fig.1</b> Members of Nations of Treaty One sign flags retrieved
+            from a time capsule at the 150th anniversary of the signing of the
+            treaty.
+          </p>
+        </figcaption>
+      </figure>
+
+      <section>
+        <h3>The Promises Made Outside the Treaty</h3>
+        <p>
+          Many promises were made outside of the Treaty-signing process. These
+          include, but are not limited to:
+        </p>
+        <ul>
+          <li class="description-list-style">A buggy for each chief</li>
+          <li class="description-list-style">
+            A buggy for the braves and councilors of each Chief
+          </li>
+          <li class="description-list-style">
+            A bull and a cow for each Chief
+          </li>
+          <li class="description-list-style">A boar for each reserve</li>
+          <li class="description-list-style">
+            A sow for each chief, both a female and a male raised by farmers
+          </li>
+          <li class="description-list-style">
+            A plough and harrow for each settler cultivating the ground
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!--
+      The footer of the website containing source information and copyright information.
+      The source information is contained in a <section> tag. 
+      The source information is styled using a "source-link" class that is styled
+      in the external stylesheet. 
+    -->
+    <footer>
+      <section>
+        <h3>Sources:</h3>
+        <ul>
+          <li>
+            <a 
+              href="https://treaty1.ca/" target="blank" class="source-link">
+                Click here to go to Treaty One Website
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html"
+              target="blank"
+              class="source-link">
+                Click here to go to Government of Canada Treaty One Anniversary
+                Webpage
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://publications.gc.ca/collections/collection_2011/ainc-inac/R3-145-2011-eng.pdf"
+              target="blank"
+              class="source-link">
+                Click here to go to the Indian and Northern Affairs Canada
+                Treaties in Manitoba online PDF
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <br />
+
+      <p>&#169; 2022-2023 Daria P</p>
+    </footer>
+  </body>
+</html>
